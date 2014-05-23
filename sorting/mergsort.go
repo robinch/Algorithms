@@ -9,10 +9,10 @@ func main() {
 	fmt.Println(mergeSort(list))
 }
 
-func mergeSort(intArray []int) []int {
+func mergeSort(unsortedList []int) []int {
 	// Have to make a copy of the list so it does not
 	// change the original
-	list := make([]int, len(intArray))
+	list := make([]int, len(unsortedList))
 	copy(list, intArray)
 	if len(list) <= 1 {
 		return list
