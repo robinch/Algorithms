@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	list := []int{1, 6, 3, 7, 1, 4, 2,5,3,4,57,8}
+	list := []int{1, 6, 3, 7, 1, 4, 2, 5, 3, 4, 57, 8}
 	fmt.Println(mergeSort(list))
 }
 
@@ -13,7 +13,7 @@ func mergeSort(unsortedList []int) []int {
 	// Have to make a copy of the list so it does not
 	// change the original
 	list := make([]int, len(unsortedList))
-	copy(list, intArray)
+	copy(list, unsortedList)
 	if len(list) <= 1 {
 		return list
 	} else {
