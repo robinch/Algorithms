@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	list := []int{1, 6, 3, 7, 1, 4, 2, 5, 3, 4, 57, 8}
+	list := []int{42, 25, 1, 2, 5, 77, 2, 3, 552}
 	fmt.Println(mergeSort(list))
 }
 
